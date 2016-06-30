@@ -30,13 +30,6 @@
         NSAttributedString *labelIcon = [self.iconArray[self.index] attributedString];
         [self.fontButton setAttributedTitle:labelIcon forState:UIControlStateNormal];
     }
-   
-    
-    
-//    for (NSUInteger i = 0; i < self.iconArray.count; i++) {
-//        NSAttributedString *labelIcon = [self.iconArray[i] attributedString];
-//        [self.fontButton setAttributedTitle:labelIcon forState:UIControlStateNormal];
-//    }
 }
 
 
@@ -44,17 +37,14 @@
     [super viewDidLoad];
     FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:40];
     FAKFontAwesome *check = [FAKFontAwesome wonIconWithSize:40];
+    FAKFontAwesome *mail = [FAKFontAwesome mailReplyAllIconWithSize:40];
+    FAKFontAwesome *git = [FAKFontAwesome gitIconWithSize:40];
     self.iconArray = [[NSMutableArray alloc]init];
     [self.iconArray addObject:starIcon];
     [self.iconArray addObject:check];
+    [self.iconArray addObject:mail];
+    [self.iconArray addObject:git];
     self.index = 0;
-//    NSAttributedString *star = [starIcon attributedString];
-//    
-//    
-//    [self.fontButton setAttributedTitle:star forState:UIControlStateNormal];
-    //NSString *starString = [NSString stringWithFormat:@"%@", starString];
-    //self.fontButton.titleLabel.attributedText = star;
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
